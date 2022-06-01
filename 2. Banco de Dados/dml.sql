@@ -1,10 +1,10 @@
-USE catalogoFilmesSB;
+USE catalogoFilmeSB;
 
 
 
 -- carga inicial usuÃ¡rio admin
 INSERT INTO tb_usuario (nm_usuario, ds_email, ds_senha)
-     VALUES ('admin', 'admin@admin.com.br', '1234');
+     VALUES ('admin', 'admin@admin.com.br', '59334558');
 
 
 
@@ -15,7 +15,7 @@ select id_usuario 		id,
        ds_email			email
   from tb_usuario
  where ds_email 		= 'admin@admin.com.br'
-   and ds_senha			= '1234';
+   and ds_senha			= '59334558';
 
 
 
