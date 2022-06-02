@@ -8,9 +8,8 @@ export async function login(email, senha) {
         ds_email			email
         from tb_usuario
         where ds_email 		= ?
-        and ds_senha		= ?`
+        and ds_senha		= ? `
 
-    const {linhas} = await con.query(comando, [email, senha])
+    const [linhas] = await con.query(comando, [email, senha])
     return linhas[0];
-
 }
